@@ -1,1 +1,79 @@
 
+# 🫀 Task 3: Heart Disease Prediction
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+## 📌 Objective
+Build a Machine Learning model to predict whether a person is at risk of **heart disease** based on health data.
+
+---
+
+## 📂 Dataset
+| Property | Details |
+|----------|---------|
+| Source | Heart Disease UCI Dataset |
+| Rows | 303 |
+| Columns | 14 |
+| Target | 0 = No Disease, 1 = Disease |
+
+---
+
+## 🛠️ Libraries Used
+| Library | Purpose |
+|---------|---------|
+| Pandas | Data loading and cleaning |
+| NumPy | Numerical operations |
+| Matplotlib & Seaborn | Visualization |
+| Scikit-learn | ML models and evaluation |
+
+---
+
+## 📊 What Was Done
+- Loaded and cleaned the dataset
+- Checked for missing values (none found)
+- Performed Exploratory Data Analysis (EDA)
+- Visualized Age distribution, Box Plots, Correlation Heatmap
+- Trained **Logistic Regression** model
+- Trained **Decision Tree Classifier** model
+- Evaluated using Accuracy, Confusion Matrix, ROC-AUC Curve
+- Visualized Feature Importance (Decision Tree)
+
+---
+
+## 📈 Key Results
+| Model | Accuracy | AUC Score |
+|-------|----------|-----------|
+| Logistic Regression | ~85% | ~0.91 |
+| Decision Tree | ~80% | ~0.83 |
+
+- ✅ Logistic Regression performed better overall
+- ✅ Top features: **thalach**, **cp**, **oldpeak**
+- ✅ No missing values found in dataset
+
+---
+
+## ▶️ How to Run
+
+**Step 1:** Install libraries
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+**Step 2:** Open notebook
+```bash
+jupyter notebook task3_heart.ipynb
+```
+
+**Step 3:** Run cells one by one using `Shift + Enter`
+
+---
+
+## 📁 File Structure
+```
+Task3-Heart/
+├── task3_heart.ipynb   # Main Jupyter Notebook
+└── README.md           # Task description
+```
